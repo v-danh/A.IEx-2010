@@ -1,4 +1,4 @@
-# A.IEx-2010
+# A.I Exercise - 2010
 ### This is the MIT's A.I Exercises
 
 ### Assignments
