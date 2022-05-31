@@ -1,4 +1,5 @@
 # A.IExer (6.034, Fall 2010)
+
 ## This is the MIT's A.I Exercises (6.034)
 
 
