@@ -3,7 +3,6 @@
 ## This is the MIT's A.I Exercises (6.034)
 
 
-
 ### Course detail
 + Link: https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/
 
