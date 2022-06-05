@@ -24,14 +24,6 @@ def factorial(n):
         raise Exception('factorial - input must not be negative')
 
 
-# if __name__ == '__main__':
-#     print(cube(3))
-#     print(factorial(1))
-#     print(factorial(2))
-#     print(factorial(3))
-#     # for i in range(1, 6):
-#     #     print(factorial(i))
-
 # c. count_pattern(pattern, lst)
 #def count_pattern(pattern, lst):
     """which counts the number of times a certain pattern of
@@ -45,8 +37,33 @@ def factorial(n):
 #print(count_pattern(('a', 'b'),
 #                    ('a', 'b', 'c', 'e', 'b', 'a', 'b', 'f')))
 
-# Expression depth
+# d. Expression depth
 # depth('x') => 0
 # depth(('expt', 'x', 2)) => 1
 # depth(('+', ('expt', 'x', 2), ('expt', 'y', 2))) => 2
 # depth(('/', ('expt', 'x', 5), ('expt', ('-', ('expt', 'x', 2), 1), ('/', 5, 2)))) => 4
+
+def depth(expr):
+    if not isinstance(expr, tuple):
+        return 0
+    # this says: return the maximum depth of any sub-expression + 1
+    return max(map(depth, expr)) + 1
+
+
+
+if __name__ == '__main__':
+    print('a.')
+    print('Cube =', cube(3))
+    print('##########')
+    print('b.')
+    print('Factorial1 =', factorial(1))
+    print('Factorial2 =', factorial(2))
+    print('Factorial3 = ', factorial(3))
+    print('##########')
+    
+    
+    print('d.')
+    print(depth('x'))
+    print(depth(('expt', 'x', 2)))
+    print(depth(('+', ('expt', 'x', 2), ('expt', 'y', 2))))
+    print(depth(('/', ('expt', 'x', 5), ('expt', ('-', ('expt', 'x', 2), 1), ('/', 5, 2)))))
