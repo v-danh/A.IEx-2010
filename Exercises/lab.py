@@ -48,22 +48,3 @@ def depth(expr):
         return 0
     # this says: return the maximum depth of any sub-expression + 1
     return max(map(depth, expr)) + 1
-
-
-
-if __name__ == '__main__':
-    print('a.')
-    print('Cube =', cube(3))
-    print('##########')
-    print('b.')
-    print('Factorial1 =', factorial(1))
-    print('Factorial2 =', factorial(2))
-    print('Factorial3 = ', factorial(3))
-    print('##########')
-    
-    
-    print('d.')
-    print(depth('x'))
-    print(depth(('expt', 'x', 2)))
-    print(depth(('+', ('expt', 'x', 2), ('expt', 'y', 2))))
-    print(depth(('/', ('expt', 'x', 5), ('expt', ('-', ('expt', 'x', 2), 1), ('/', 5, 2)))))
