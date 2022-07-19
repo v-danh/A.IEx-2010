@@ -2,7 +2,7 @@
 
 ## This is the MIT's A.I Exercises (6.034)
 
-> This is my exercises
+> This is my practical exercises
 
 
 ### Course detail
